@@ -105,6 +105,7 @@ class Shorty:
         outfile.write(json.dumps(self.url_map, indent=2))
         outfile.close()
 
+    # Actually this makes TSVs, but hey, this is just a quick demo
     def to_csv(self, f, out=sys.stdout):
         out.write("short\tlong\n")
         for k in sorted(self.url_map):
