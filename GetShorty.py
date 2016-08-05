@@ -106,7 +106,6 @@ class Shorty:
         outfile.close()
 
     def to_csv(self, f, out=sys.stdout):
-        # outfile = open(out, "a")
         out.write("short\tlong")
         for k in sorted(self.url_map):
             # print self.b_url + k + "\t" + f(self.url_map[k])

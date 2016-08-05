@@ -22,7 +22,7 @@ bitly = GetShorty.Shorty("http://bit.ly/", callback=process_bitly_response)
 if len(sys.argv) > 1 and sys.argv[1] == "--csv":
     outfile = sys.stdout
     if len(sys.argv) > 2:
-        outfile = open(sys.argv[2], "a")
+        outfile = open(sys.argv[2], "w")
     bitly.to_csv(bitly_to_csv, out=outfile)
 
 else:
