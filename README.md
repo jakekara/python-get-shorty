@@ -1,4 +1,6 @@
 # GetShorty
+by Jake Kara
+jake@jakekara.com
 
 "Brute force" crawler of url shortening services.
 
@@ -9,7 +11,7 @@
 
 To start crawling bitly two-character URLs (and storing in out.json cache file):
 
-   $ python brute.py
+   	 $ python brute.py
 
 If you want to crawl longer URLs, the code can be modified. I didn't bother
 making it a command line argument.
@@ -23,11 +25,11 @@ and then exit.
 To output the cached URLs to in TSV format (like the one in sample_output
 folder of this repo), use:
 
-   $ python brute.py --csv
+       $ python brute.py --csv
 
 To output the TSV to a file:
 
-   $ python brute.py --csv out-file.tsv
+   	  $ python brute.py --csv out-file.tsv
 
 Yes, I called it --csv, but it's really in TSV format (tab-separated, not
 commas). You'll get over it.
