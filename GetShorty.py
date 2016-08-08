@@ -25,8 +25,8 @@ class Brute:
         self.chars = characters
         self.blength = length
         
-    def shift(self, n):
-        return self.chars[n]
+    # def shift(self, n):
+    #     return self.chars[n]
 
     def max_permutations(self, length):
         if length == 0:
